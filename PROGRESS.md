@@ -2,6 +2,10 @@
 
 Date: 2026-05-04
 
+## Update: 2026-05-11
+
+- Added `README.md` documenting the repo purpose, structure, prerequisites, and the current data-prep, LoRA training, and prompt-eval workflow.
+
 ## Completed
 
 - Confirmed this directory contains only tokenizer/config files and ONNX inference artifacts, not trainable PyTorch/HF weights.
