@@ -1,0 +1,53 @@
+{
+  "model_name_or_path": "prism-ml/Ternary-Bonsai-1.7B-unpacked",
+  "preferred_local_model_dir": "/home/bitnom/Models/llm/Ternary-Bonsai-1.7B-unpacked",
+  "pilot_dataset": {
+    "train_jsonl": "runs/data/gpt54_xhigh_train_smoke.jsonl",
+    "eval_jsonl": "runs/data/gpt54_xhigh_eval_smoke.jsonl",
+    "accepted_sources": [
+      "gpt54-xhigh-2000",
+      "gpt54-xhigh-750",
+      "gpt54-step-by-step",
+      "dolly-gpt55",
+      "bespoke-stratos",
+      "mot-math",
+      "mot-code",
+      "mot-science"
+    ],
+    "quarantined_sources": [
+      "withinus-gpt55-recursive",
+      "versper-orpo-recursive",
+      "gpt54-xhigh-mirrors"
+    ]
+  },
+  "adapter": {
+    "rank": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ]
+  },
+  "local_smoke_training": {
+    "max_seq_length": 2048,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "max_steps": 20,
+    "learning_rate": 0.00002,
+    "bf16": false,
+    "fp16": true
+  },
+  "rented_gpu_training": {
+    "minimum_gpu_memory_gb": 24,
+    "preferred_gpu_memory_gb": 48,
+    "max_seq_length": 4096,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 32,
+    "num_train_epochs": 1,
+    "learning_rate": 0.00002,
+    "bf16": true
+  }
+}

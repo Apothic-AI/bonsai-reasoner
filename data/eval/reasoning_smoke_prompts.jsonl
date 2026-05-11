@@ -1,0 +1,5 @@
+{"id":"math-01","messages":[{"role":"user","content":"Solve the problem carefully. A rectangle has perimeter 50 and area 150. What are its side lengths?"}]}
+{"id":"logic-01","messages":[{"role":"user","content":"A jar has 5 red balls and 7 blue balls. Two balls are drawn without replacement. What is the probability both are red? Give the final answer as a simplified fraction."}]}
+{"id":"code-01","messages":[{"role":"user","content":"Write a Python function that returns true if a string has balanced parentheses, brackets, and braces. Briefly explain the approach."}]}
+{"id":"format-01","messages":[{"role":"user","content":"Return exactly one JSON object with keys answer and confidence. Question: what is 17 * 23?"}]}
+{"id":"instruction-01","messages":[{"role":"user","content":"Explain why generic post-training 2-bit quantization can hurt a small language model more than adapter fine-tuning over a frozen quantized base."}]}
